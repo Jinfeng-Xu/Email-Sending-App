@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="25sp"
+            android:text="Count"
+            android:id="@+id/tv_test"
+            android:singleLine="false"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:hint="Please enter the target"
+                android:id="@+id/et_number"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_confirm"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="From"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_from"
+                    android:gravity="center_vertical"
+                    android:hint="Email Address"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="To"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_to"
+                    android:gravity="center_vertical"
+                    android:hint="Email Address"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="CC"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_cc"
+                    android:gravity="center_vertical"
+                    android:hint="Email Address"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Subject"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_subject"
+                    android:gravity="center_vertical"
+                    android:hint="Subject"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Email Content"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    />
+                <ScrollView
+                    android:id="@+id/SCROLLER_ID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:fillViewport="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_content"
+                        android:gravity="center_vertical"
+                        android:hint="Content"/>
+                </ScrollView>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Send Email"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:id="@+id/btn_back"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
